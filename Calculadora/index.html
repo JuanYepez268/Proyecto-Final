@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULADORA</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="funciones.js" async="true"></script>
+</head>
+<body>
+<section>
+	<div id="calculadora">
+		<div id="pantalla">
+			<div id="dia-noche">
+				<img src="img/sun.png" id="dia" onclick="claro()">
+				<img src="img/moon-noche.png" id="noche" onclick="oscuro();">
+			</div>
+			<div id="datos"></div>
+			<div id="resultado"></div>
+		</div>
+		<div id="teclado">
+			<input type="button" value="C" id="botonC"  onclick="borrar()">
+			<input type="button" value="" id="botonV">
+			<input type="button" value="" id="botonV">
+			<input type="button" value="/" id="boton" onclick="agregar('/')">
+			<input type="button" value="7" id="botonEX" name="botones" onclick="agregar(7)">
+			<input type="button" value="8" id="botonEX" name="botones" onclick="agregar(8)">
+			<input type="button" value="9" id="botonEX" name="botones" onclick="agregar(9)">
+			<input type="button" value="X" id="boton" onclick="agregar('*')">
+			<input type="button" value="4" id="botonEX" name="botones" onclick="agregar(4)">
+			<input type="button" value="5" id="botonEX" name="botones" onclick="agregar(5)">
+			<input type="button" value="6" id="botonEX" name="botones" onclick="agregar(6)">
+			<input type="button" value="-" id="boton" onclick="agregar('-')">
+			<input type="button" value="1" id="botonEX" name="botones" onclick="agregar(1)">
+			<input type="button" value="2" id="botonEX" name="botones" onclick="agregar(2)">
+			<input type="button" value="3" id="botonEX" name="botones" onclick="agregar(3)">
+			<input type="button" value="+" id="boton" onclick="agregar('+')">
+			<input type="button" value="0" id="botonEX" name="botones" onclick="agregar(0)">
+			<input type="button" value="" id="botonV">
+			<input type="button" value="." id="botonEX" name="botones" onclick="agregar('.')">
+			<input type="button" value="=" id="botonIgual" onclick="resultado()">
+		</div>
+	</div>
+</section>
+</body>
+</html>
