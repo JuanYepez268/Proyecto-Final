@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+:root{
+	/*colores*/
+	--verde: #2ED573;
+	--azul: #3742FA;
+	--rojo: #FF4757;
+	--blanco: #F1F2F6;
+	--negro: #2F3542;
+
+	/*Tamaños*/
+	--titulo: 30px;
+	--subtitulo: 20px;
+	--parrafo: 15px;
+}
+
+header{
+	background: var(--azul);
+	width: 100%;
+	height: 70px; 
+	position: relative;
+	float: left;
+	line-height: 70px;
+}
+	h6{
+		font-size: var(--subtitulo);
+		position: relative;
+		float: left;
+		color: var(--blanco);
+		margin-left: 30px;
+	}
+	a{
+		text-decoration: none;
+		color: var(--negro);
+		transition: .2s all;
+	}
+	a:hover{
+		cursor: pointer;
+		color: var(--rojo);
+	}
+div{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: var(--titulo);
+	color: var(--rojo);
+}
+.contenedor{
+	
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.ficha{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 100px;
+	background: var(--blanco);
+	border-radius: 10px 10px 10px 10px;
+	overflow: hidden;
+	transition: .2s all;
+	box-sizing: border-box;
+}
+.ficha:hover{
+	cursor: pointer;
+	border: 3px solid var(--verde);
+}
